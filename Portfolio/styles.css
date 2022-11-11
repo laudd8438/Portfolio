@@ -12,6 +12,8 @@ header>img{
 }
 header{
     padding: 1rem;
+    justify-content: center;
+    display: flex;
 }
 h1{
     display: none;
@@ -43,6 +45,9 @@ main img{
     max-width: 100%;
     margin: .5rem 0;
 }
+.myworks a{
+    display: block;
+}
 @media (min-width:1100px){
     header{
         flex-wrap: nowrap;
@@ -56,7 +61,6 @@ main img{
         max-height: 78rem;
     }
     .myworks h2{
-        width: 32%;
         margin: .5rem;
     }
     .myworks img{
