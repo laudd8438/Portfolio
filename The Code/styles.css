@@ -32,7 +32,7 @@ nav>a{
     margin: 1rem;
 }
 nav>a:hover{
-    background-color: rgb(200, 200, 205) ;
+    background-color: rgb(44, 44, 61) ;
 }
 header{
     display: flex;
@@ -59,29 +59,15 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
 }
-@media (min-width:1100px){
-    header{
-        flex-wrap: nowrap;
-        justify-content:flex-start ;
-        align-items:center ;
-    }
-    .myworks{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        max-height: 78rem;
-    }
-    .myworks h2{
-        margin: .5rem;
-    }
-    .myworks img{
-        width: 32%;
-        margin: .5rem;
-        align-items: center;
-    }
+footer img{
+    height: 5rem;
 }
+footer img:hover{
+    background-color: rgb(44, 44, 61) ;
+    padding: .3rem;
+}
+
 @media (min-width:1500px){
     .myworks{
         max-height: 120rem; 
