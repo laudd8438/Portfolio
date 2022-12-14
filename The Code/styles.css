@@ -50,9 +50,6 @@ main img{
     max-width: 100%;
     margin: .5rem 0;
 }
-.myworks a{
-    display: block;
-}
 footer{
     background-color: #adadb4;
     color: #0b132b;
@@ -67,15 +64,55 @@ footer img:hover{
     background-color: rgb(44, 44, 61) ;
     padding: .3rem;
 }
-
+.container{
+    margin: 50px auto;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 10px solid;
+    border-top-color:rgb(44, 44, 61);
+    border-left-color: rgb(44, 44, 61);
+    border-bottom-color: rgb(44, 44, 61);
+    border-right-color: rgb(44, 44, 61);
+    position: relative;
+  }
+  .photo {
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+    object-fit: contain;
+  }
+  @keyframes round {
+    25% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+  }
+  img:nth-child(1) {
+    animation-delay: 12s;
+  }
+   
+  img:nth-child(2) {
+    animation-delay: 8s;
+  }
+   
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+   
+  img:nth-child(4) {
+    animation-delay: 0s;
+  }
 @media (min-width:1500px){
-    .myworks{
+    .header>img{
         max-height: 120rem; 
         align-items: center;
     }
 }
 @media (min-width:2300px){
-    .myworks{
+    .header{
         max-height: 150rem;
         align-items: center;
     }
